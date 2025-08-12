@@ -44,7 +44,7 @@ jobs:
         XCODE_DEVELOPER_DIR="/Applications/Xcode_${{ env.xcode_version }}.app/Contents/Developer"
         sudo xcode-select --switch "${XCODE_DEVELOPER_DIR}"
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Build and test
       shell: bash
@@ -89,7 +89,7 @@ jobs:
         XCODE_DEVELOPER_DIR="/Applications/Xcode_${{ env.xcode_version }}.app/Contents/Developer"
         sudo xcode-select --switch "${XCODE_DEVELOPER_DIR}"
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Build for iphonesimulator ${{ matrix.target_arch }}
       shell: bash
@@ -112,7 +112,7 @@ jobs:
   Vcpkg:
     runs-on: macos-13
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: actions/setup-python@v5
       with:
         python-version: ${{ env.python_version }}
@@ -214,7 +214,7 @@ jobs:
         XCODE_DEVELOPER_DIR="/Applications/Xcode_${{ env.xcode_version }}.app/Contents/Developer"
         sudo xcode-select --switch "${XCODE_DEVELOPER_DIR}"
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Generate compile_commands.json and ONNX protobuf files
       shell: bash
