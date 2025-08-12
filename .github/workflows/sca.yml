@@ -20,7 +20,7 @@ jobs:
       security-events: write
     runs-on: ["self-hosted", "1ES.Pool=onnxruntime-github-vs2022-mms"]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: false
       - uses: actions/setup-python@v5
@@ -63,7 +63,7 @@ jobs:
       security-events: write
     runs-on: ["self-hosted", "1ES.Pool=onnxruntime-github-vs2022-mms"]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: false
       - uses: actions/setup-python@v5
@@ -102,7 +102,7 @@ jobs:
       security-events: write
     runs-on: ["self-hosted", "1ES.Pool=onnxruntime-github-vs2022-mms"]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: false
       - uses: actions/setup-python@v5
@@ -142,7 +142,7 @@ jobs:
       security-events: write
     runs-on: ["self-hosted", "1ES.Pool=onnxruntime-github-vs2022-mms"]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: false
       - uses: actions/setup-python@v5
