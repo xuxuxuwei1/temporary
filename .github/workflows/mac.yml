@@ -28,7 +28,7 @@ jobs:
     timeout-minutes: 60
 
     steps:
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: ${{ env.python_version }}
 
@@ -73,7 +73,7 @@ jobs:
     timeout-minutes: 60
 
     steps:
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: ${{ env.python_version }}
 
@@ -113,7 +113,7 @@ jobs:
     runs-on: macos-13
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: ${{ env.python_version }}
 
@@ -204,7 +204,7 @@ jobs:
     timeout-minutes: 30
 
     steps:
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: ${{ env.python_version }}
 
